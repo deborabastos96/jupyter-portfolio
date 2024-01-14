@@ -13,8 +13,10 @@ function AppLayout() {
 
       <Header />
 
-      <main>
-        <Outlet />
+      <main className="bg-hoverLink grid h-lvh justify-center pt-[125px]">
+        <div className="shadow-main w-[1200px] bg-white">
+          <Outlet />
+        </div>
       </main>
     </>
   );
