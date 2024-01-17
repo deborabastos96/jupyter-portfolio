@@ -1,11 +1,7 @@
-function SubMenu() {
+function SubMenu({ children }) {
   return (
-    <div className="submenu shadow-subMenu absolute z-50 hidden border border-border bg-white">
-      <ul>
-        <li>cv (Curriculum Vitae)</li>
-        <li>Save</li>
-        <li>Edit</li>
-      </ul>
+    <div className="submenu absolute left-0 top-7 z-50 hidden w-[200px] border border-border bg-white text-left shadow-subMenu">
+      <ul>{children}</ul>
     </div>
   );
 }
